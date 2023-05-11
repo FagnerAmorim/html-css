@@ -1,0 +1,12 @@
+@charsed "UTF-8";
+
+body {
+    background-color: rgb(32, 32, 32);
+    text-align: center;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
