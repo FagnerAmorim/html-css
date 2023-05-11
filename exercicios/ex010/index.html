@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Links</title>
+</head>
+<body>
+    <h1>Usando links externos</h1>
+    <p>Você pode acessar o meu <a href="https://gustavoguanabara.github.io/" target="_blank" rel="external">repositório público no GitHub</a></p> <!-- links externos devem ser acessados em outra aba para não sair da janela do site principal acessado usando as tags target="_blank" rel="external" target:alvo rel(realy): retransmissão-->
+    <p>Você também pode acessar o meu <a href="https://youtube.com/cursoemvideo/" target="_blank" rel="external">canal gratuito no YouTube</a></p>
+<h2>Usando links internos</h2>
+    <p>Esta é a primeira página do site. Se você quiser, pode acessar também a minha <a href="pag002.html" rel="next" target="_self">Segunda página</a></p> <!-- semânticas da tag rel(realy): next(próxima) e prev(previous:anterior) para a página interna.  -->
+    <p>Você também pode acessar nossa <a href="noticias/pag003.html" rel="next" target="_self">página de notícias</a></p> <!-- rel self(na própria aba)-->
+    <h1>Links para download</h1>
+    <ul>
+        <li><a href="livro/01 - História da Internet.pdf" download="01 - História da Internet.pdf" type="application/pdf">Baixar o livro em PDF</a></li>
+        <li><a href="livro/01 - História da Internet.rar" download="01 - História da Internet.rar" type="aplication/rar">Livro compactado em ZIP</a></li> <!-- Download de arquivos devem ser identificados pelo código da tag href=/ download=nome do arquivo e o código type= aplication/tipo do arquivo(ex:pdf) códigos na apostila.-->
+    </ul>
+</body>
+</html>
