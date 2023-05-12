@@ -3,4 +3,4 @@
 
  Estou aprendendo a criar sites e agora vou gerenciar meus repositórios!
  
-<a href="ex001">Exercício 001</a>
+<a href="ex001">ex001</a>
