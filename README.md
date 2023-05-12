@@ -23,7 +23,7 @@
 
 <a href="https://fagneramorim.github.io/html-css/exercicios/ex011/index.html" target="_blank" rel="external">Executar o exercício 011</a>
 
-<a href="https://fagneramorim.github.io/html-css/exercicios/ex012/index.html">Executar o exercício 012</a>
+<a href="https://fagneramorim.github.io/html-css/exercicios/ex012/index.html" target="_blank" rel="external">Executar o exercício 012</a>
 
 <a href="https://fagneramorim.github.io/html-css/exercicios/ex013/index.html" target="_blank" rel="external">Executar o exercício 013</a>
 
