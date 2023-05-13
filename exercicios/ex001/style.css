@@ -1,16 +1,15 @@
 @charset "UTF-8";
 
-body{
-    background-color: aqua;
-    text-align: center;
-}
- 
-h1 {
-    text-align: center;
-    color: blue;
-}
+:root {
+    --cor0: #47A8ED;
+    --cor1: #008AED;
+    --cor2: #357DB0;
+    --cor3: #005EA0;
+    --cor4: #00406E;
+    --cor5: #003869;
 
-h2 {
-    text-align: center;
-    color: blue;
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 
+    --fonte-android: 
+
 }
