@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
 :root {
     --cor0: #47A8ED;
     --cor1: #008AED;
@@ -9,7 +11,7 @@
     --cor5: #003869;
 
     --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
-    --fonte-destaque: 
+    --fonte-destaque: 'Patrick Hand', cursive;
 }
 
 * {
@@ -33,9 +35,34 @@ header {
     padding-top: 40px;
 }
 
+.escudo1 {
+    background-image: url('imagens/simbolo\ do\ deportivo\ la\ fuinha-transp.JPG');
+    background-size: 100% 100%;
+    position: relative;
+    width: 100px;
+    height: 100px;
+
+    left: 25%;
+    transform: translate(+60%, +85%);
+}
+
+.escudo2 {
+    background-image: url('imagens/simbolo\ do\ deportivo\ la\ fuinha-transp.JPG');
+    background-position: right right;
+    background-size: 100% 100%;
+    position: relative;
+    background-attachment: fixed;
+    width: 100px;
+    height: 100px;
+
+    left: 68%;
+    transform: translate(-60%, -100%);
+
+}
+
 header > h1 {
     color: var(--cor0);
-    font-family: var(--fonte-padrao);
+    font-family: var(--fonte-destaque);
     font-size: 3em;
     font-weight: normal;
     margin-bottom: 20px;
