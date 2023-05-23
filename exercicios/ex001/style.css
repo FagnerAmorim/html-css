@@ -35,31 +35,6 @@ header {
     padding-top: 40px;
 }
 
-.escudo1 {
-    background-image: url('imagens/simbolo\ do\ deportivo\ la\ fuinha-transp.JPG');
-    background-size: 100% 100%;
-    position: relative;
-    width: 100px;
-    height: 100px;
-
-    left: 25%;
-    transform: translate(+60%, +85%);
-}
-
-.escudo2 {
-    background-image: url('imagens/simbolo\ do\ deportivo\ la\ fuinha-transp.JPG');
-    background-position: right right;
-    background-size: 100% 100%;
-    position: relative;
-    background-attachment: fixed;
-    width: 100px;
-    height: 100px;
-
-    left: 68%;
-    transform: translate(-60%, -100%);
-
-}
-
 header > h1 {
     color: var(--cor0);
     font-family: var(--fonte-destaque);
