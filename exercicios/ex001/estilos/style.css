@@ -17,6 +17,7 @@
 * {
     margin: 0px;
     padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -74,6 +75,27 @@ nav > a {
 nav > a:hover {
     background-color: var(--cor1);
     color: var(--cor5);
+}
+
+main > div {
+    width: 1200px;
+    height: 1465px;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.479);
+    color: #003869;
+    border: 1px solid black;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.226);
+    border-radius: 15px;
+}
+
+main.imagem {
+    background-image: url(../imagens/simbolo\ do\ deportivo\ la\ fuinha.JPG);
+    width: 1425px;
+    height: 1465px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left top center bottom;
+    
 }
 
 footer {
