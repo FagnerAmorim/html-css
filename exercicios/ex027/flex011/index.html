@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        div.container {
+            background-color: lightsalmon;
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        div.item {
+            background-color: lightskyblue;
+            border: 1px solid black;
+            text-align: center;
+            flex-basis: 150px;
+        }
+
+        div#cxA{
+            flex-shrink: 1;
+            flex-grow: 0;
+        }
+        div#cxB{
+            flex-shrink: 2;
+            flex-grow: 1;
+        }
+        div#cxC{
+            flex-shrink: 4;
+            flex-grow: 4;
+        }
+        /*flex-shrink(encolher item)propriedade padrão do item é = 1
+        flex-grow(não pode crescer) padrão do item é = 0
+        flex-basis valor padrão = auto
+        O aumento desproporcional do item, tanto shrink quanto grow de forma desmembrada, ou seja, em id's, ao adicionar propriedade numérica diferente, havera difernça nos blocos, exemplo acima no flex grow em ordem crescente para crescer a partir do 1, e no shrink para encolher a partir do 2
+        */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item"id="cxA">A</div>
+        <div class="item"id="cxB">B</div>
+        <div class="item"id="cxC">C</div>
+    </div>
+</body>
+</html

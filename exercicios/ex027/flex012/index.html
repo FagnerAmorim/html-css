@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        div.container {
+            background-color: lightsalmon;
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        div.item {
+            background-color: lightskyblue;
+            border: 1px solid black;
+            text-align: center;
+            
+        }
+
+        div#cxA{
+            flex: 1 0 200px;
+            /*
+            Simplificação do código através de declaração flex= ordem sequencial: flex-grow+flex-shrink+flex-basis
+
+            para simplificar essas declarações no modo padrão basta apenas digitar o código flex: 0 1 auto ou
+            flex: initial
+
+            para simplificar essas declarações no modo nada flexivel(que não tenha flexibilidade nenhuma) basta apenas digitar o 
+            código flex: 0 0 auto
+            ou flex: none
+
+            para simplificar essas declarações no modo de total flexibilidade(tanto para aumentar quanto para diminuir no tamanho natural do conteudo no item filho) basta apenas digitar o código flex: 1 1 auto
+            ou flex: auto
+
+            ha tambem a posibilidade de simplificar essas declarações acrescentando apenas o numero 3 (somente o código do flex-grow: 1,2 ou 3, indicando que o restante do código será freconhecido como padrão) basta apenas digitar o código flex: 3 
+            ou flex: 3 1 auto 
+
+            */
+        }
+        div#cxB{
+            flex: 1 1 150px;
+        }
+        div#cxC{
+            flex: 1 8 auto;
+        }
+        /*
+        flex-shrink(encolher item)propriedade padrão do item é = 1
+        flex-grow(não pode crescer) padrão do item é = 0
+        flex-basis valor padrão = auto
+        O aumento desproporcional do item, tanto shrink quanto grow de forma desmembrada, ou seja, em id's, ao adicionar propriedade numérica diferente, havera difernça nos blocos, exemplo acima no flex grow em ordem crescente para crescer a partir do 1, e no shrink para encolher a partir do 2
+        */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item"id="cxA">A</div>
+        <div class="item"id="cxB">B</div>
+        <div class="item"id="cxC">C</div>
+    </div>
+</body>
+</html
