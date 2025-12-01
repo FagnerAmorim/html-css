@@ -7,26 +7,31 @@
     <style>
         div.conteiner {
             border: 3px solid blue;
-            height: 250px;/*altura*/
+            /*height: 250px; altura - removido do exercício*/
             display: grid;/*display formato grade, visualmente em nada interfere, mas em base semantica ha significado importante*/
 
-            grid-template: repeat(3, auto) / repeat(3, auto);
-
-            /*grid-template-columns: auto auto auto;
-            ou simplificar no formato repeat(3, auto);*/
+            grid-template-columns: 100px 40% repeat(2, 1fr);
+            /*ou simplificar no formato repeat(3, auto);*/
             
             /*a propriedade auto ajusta as colunas ao conteiner principal, em casos de ajustes de altura ou largura basta apenas colocar as medidas em px que deseja acrescentar*/
 
-            /*grid-template-rows: auto auto auto;
-            ou simplificar no formato repeat(3, auto)*/
+            grid-template-rows: repeat(3, 80px);
+            
+            /*ou simplificar no formato repeat(3, auto)*/
             
             /*especifica o número (e as alturas) das linhas em um layout de grade*/
 
             /*grid-template: auto auto auto / auto auto auto; ou grid-template: repeat(3,auto) / repeat (3, auto); - simplificação das propriedades grid-template-rows+grid-template-columns - , sendo declarado as funções invertidas as propriedades como descrito na observação*/
 
+            grid-auto-flow: row; /*por padrão é row, que determina a sequência da propriedade dos itens em linha em casos de itens implicitos*/
+
+            grid-auto-rows: 80px; /*essa propriedade determina que quando criado linhas novas, automaticamente ao determinar o tamanho especifico, a nova linha é acrescentada ja com medida determinada em casos de itens implicitos*/
+
+            grid-auto-columns: 120px; /*essa propriedade determina que quando criado colunas novas, automaticamente ao determinar o tamanho especifico, a nova linha é acrescentada ja com medida determinada em casos de itens implicitos*/
+
             gap: 10px;/*propriedade grid-gap foi depreciada a partir de 2020, anexada para gap, propriedade de preenchimento de borda, que tem como objetivo preencher bordas nos itens do conteiner*/
 
-            place-items: start center;
+            place-items: normal normal;
 
             /*align-items: normal;significa esticar o item de forma vertical conforme os comandos desejados tendo como padrão a propriedade stretch ou normal*/
 
@@ -34,7 +39,7 @@
 
             /*place-items: normal normal; - simplificação das propriedades align e justify- items, sendo declarado as funções nessa sequência align-items+justify-items*/
 
-            place-content: space-between end;
+            place-content: normal normal;
 
             /*align-content: normal;significa esticar o conjunto inteiro (conteiner com os itens) de forma vertical conforme os comandos desejados tendo como padrão a propriedade stretch ou normal*/
 
@@ -59,7 +64,9 @@
         <div class="item">E</div>
         <div class="item">F</div>
         <div class="item">G</div>
-        <div class="item">H</div> <!--shothand para facilitrar atribuição a comandos com mais de 1 item com atribuição semelhante, ex: (div.item*7 -> comando+class+quantidade)-->
+        <div class="item">H</div>
+        <div class="item">I</div>
+        <div class="item">J</div> <!--shothand para facilitrar atribuição a comandos com mais de 1 item com atribuição semelhante, ex: (div.item*7 -> comando+class+quantidade)-->
     </div> <!--shothand para facilitrar atribuição a comandos, ex: (div.container -> comando+class)-->
 </body>
 </html>
