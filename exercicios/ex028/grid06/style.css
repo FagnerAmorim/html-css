@@ -9,26 +9,24 @@
 
 .caixa1 {
     background-color: red;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    grid-column-start: 1;
-    grid-column-end: 5;
+    grid-area: 1 / 1 / 2 / 5;
+
+    /*simplificação das propriedades grid-row e grid-column com a propriedade grid-area: é composta pelas medidas iniciais de cada eixo, seguido das dimensões finais
+    ex: grid-area 1 / 1 / 2 / 4 - grid-row-start+grid-column-start+grid-row-end+grid-column-end
+
+    exemplo simplificado na propriedade abaixo .caixa2
+     acrescentando também a tag span nas dimensões finais que significa a expansão de determinada quantidade de linha ou coluna até o preenchimento do conteiner
+    */
 }
 
 .caixa2 {
     background-color: green;
-    grid-row-start: 2;
-    grid-row-end: 4;
-    grid-column-start: 1;
-    grid-column-end: 3;
+    grid-area: 2 / 1 / span 2 / span 2;
 }
 
 .caixa3 {
     background-color: blue;
-    grid-row-start: 2;
-    grid-row-end: 4;
-    grid-column-start: 3;
-    grid-column-end: 5;
+    grid-area: 2 / 3 / 4 / 5;
 }
 
 /*

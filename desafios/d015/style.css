@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.conteiner {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 80px 40px 1fr 40px;
+    grid-template-columns: 1fr 150px;
+    gap: 5px;
+}
+
+.caixa {
+    background-color: lightgray;
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+#topo {
+    grid-area: 1 / 1 / 2 / -1;
+}
+
+#menu {
+    grid-area: 2 / 1 / 3 / -1;
+}
+
+#principal {
+    grid-area: 3 / 1 / -2 / 2;
+}
+
+#secundario {
+    grid-area: 3 / -2 / -2 / -1;
+}
+
+#rodape {
+    grid-area: -2 / 1 / -1 / -1;
+}
+
+
+    /*simplificação das propriedades grid-row e grid-column com a propriedade grid-area: é composta pelas medidas iniciais de cada eixo, seguido das dimensões finais
+    ex: grid-area 1 / 1 / 2 / 4 - grid-row-start+grid-column-start+grid-row-end+grid-column-end
+
+    exemplo simplificado na propriedade abaixo .caixa2
+     acrescentando também a tag span nas dimensões finais que significa a expansão de determinada quantidade de linha ou coluna até o preenchimento do conteiner
+    */
+
+
+
+
+
+
+    /*
+    termos em destaque simbolizam a localização exata da propriedade dos itens em determindas caixa nas suas respectivas localizações através de codificação com os parametros exatos de linhaa e colunas, conforme descrito no esboço da imagem na pasta do exercício
+
+    grid-row-start: 2; 
+    grid-row-end: 4;
+
+    simplificação da tag (grid-row: 2 / 4;) ou 2 / span 1
+
+    grid-column-start: 3;
+    grid-column-end: 5;
+
+    simplificação da tag (grid-column: 3 / 5;) ou 3 / span 2
+    */
